@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42EC3A0B1D4E53E0003A345E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC3A0A1D4E53E0003A345E /* AppDelegate.swift */; };
+		42EC3A0D1D4E53E0003A345E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC3A0C1D4E53E0003A345E /* ViewController.swift */; };
+		42EC3A101D4E53E0003A345E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EC3A0E1D4E53E0003A345E /* Main.storyboard */; };
+		42EC3A121D4E53E0003A345E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EC3A111D4E53E0003A345E /* Assets.xcassets */; };
+		42EC3A151D4E53E0003A345E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EC3A131D4E53E0003A345E /* LaunchScreen.storyboard */; };
+		42EC3A211D7185FD003A345E /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC3A201D7185FD003A345E /* EntryViewController.swift */; };
+		42EC3A241D719D88003A345E /* ContactItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC3A231D719D88003A345E /* ContactItem.swift */; };
+		42EC3A261D71AF94003A345E /* ContactDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC3A251D71AF94003A345E /* ContactDataController.swift */; };
+		42EC3A2F1D71B36D003A345E /* PhoneBookSharedLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EC3A2E1D71B36D003A345E /* PhoneBookSharedLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42EC3A331D71B36D003A345E /* PhoneBookSharedLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EC3A2C1D71B36D003A345E /* PhoneBookSharedLayer.framework */; };
+		42EC3A351D71B36D003A345E /* PhoneBookSharedLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42EC3A2C1D71B36D003A345E /* PhoneBookSharedLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42EC3A3F1D71B3C4003A345E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EC3A3D1D71B3C4003A345E /* Interface.storyboard */; };
+		42EC3A411D71B3C4003A345E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EC3A401D71B3C4003A345E /* Assets.xcassets */; };
+		42EC3A481D71B3C5003A345E /* PhoneBookWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 42EC3A471D71B3C5003A345E /* PhoneBookWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		42EC3A4D1D71B3C5003A345E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC3A4C1D71B3C5003A345E /* InterfaceController.swift */; };
+		42EC3A4F1D71B3C5003A345E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC3A4E1D71B3C5003A345E /* ExtensionDelegate.swift */; };
+		42EC3A511D71B3C5003A345E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EC3A501D71B3C5003A345E /* Assets.xcassets */; };
+		42EC3A551D71B3C5003A345E /* PhoneBookWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 42EC3A3B1D71B3C4003A345E /* PhoneBookWatch.app */; };
+		42EC3A601D71B58D003A345E /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC3A5F1D71B58D003A345E /* ContactCell.swift */; };
+		5C92E4503B9B11476CC38D1B /* Pods_PhoneBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2040198624A9BE8FBC94A494 /* Pods_PhoneBook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42EC3A311D71B36D003A345E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42EC39FF1D4E53E0003A345E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EC3A2B1D71B36D003A345E;
+			remoteInfo = PhoneBookSharedLayer;
+		};
+		42EC3A491D71B3C5003A345E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42EC39FF1D4E53E0003A345E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EC3A461D71B3C5003A345E;
+			remoteInfo = "PhoneBookWatch Extension";
+		};
+		42EC3A531D71B3C5003A345E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42EC39FF1D4E53E0003A345E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EC3A3A1D71B3C4003A345E;
+			remoteInfo = PhoneBookWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42EC3A341D71B36D003A345E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42EC3A351D71B36D003A345E /* PhoneBookSharedLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EC3A591D71B3C5003A345E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				42EC3A481D71B3C5003A345E /* PhoneBookWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EC3A5D1D71B3C5003A345E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				42EC3A551D71B3C5003A345E /* PhoneBookWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2040198624A9BE8FBC94A494 /* Pods_PhoneBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EC3A071D4E53E0003A345E /* PhoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EC3A0A1D4E53E0003A345E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42EC3A0C1D4E53E0003A345E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42EC3A0F1D4E53E0003A345E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42EC3A111D4E53E0003A345E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42EC3A141D4E53E0003A345E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42EC3A161D4E53E0003A345E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EC3A201D7185FD003A345E /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		42EC3A231D719D88003A345E /* ContactItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactItem.swift; sourceTree = "<group>"; };
+		42EC3A251D71AF94003A345E /* ContactDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDataController.swift; sourceTree = "<group>"; };
+		42EC3A2C1D71B36D003A345E /* PhoneBookSharedLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhoneBookSharedLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EC3A2E1D71B36D003A345E /* PhoneBookSharedLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneBookSharedLayer.h; sourceTree = "<group>"; };
+		42EC3A301D71B36D003A345E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EC3A3B1D71B3C4003A345E /* PhoneBookWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneBookWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EC3A3E1D71B3C4003A345E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		42EC3A401D71B3C4003A345E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42EC3A421D71B3C4003A345E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EC3A471D71B3C5003A345E /* PhoneBookWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PhoneBookWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EC3A4C1D71B3C5003A345E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		42EC3A4E1D71B3C5003A345E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		42EC3A501D71B3C5003A345E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42EC3A521D71B3C5003A345E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EC3A5F1D71B58D003A345E /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		4545883726DC19E5238EAEED /* Pods-PhoneBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneBook/Pods-PhoneBook.release.xcconfig"; sourceTree = "<group>"; };
+		F0DF29748F9FAE60C822483F /* Pods-PhoneBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneBook/Pods-PhoneBook.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42EC3A041D4E53E0003A345E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C92E4503B9B11476CC38D1B /* Pods_PhoneBook.framework in Frameworks */,
+				42EC3A331D71B36D003A345E /* PhoneBookSharedLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EC3A281D71B36D003A345E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EC3A441D71B3C5003A345E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B0ED55FC29DB25DCAEB2996 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0DF29748F9FAE60C822483F /* Pods-PhoneBook.debug.xcconfig */,
+				4545883726DC19E5238EAEED /* Pods-PhoneBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		42EC39FE1D4E53E0003A345E = {
+			isa = PBXGroup;
+			children = (
+				42EC3A091D4E53E0003A345E /* PhoneBook */,
+				42EC3A2D1D71B36D003A345E /* PhoneBookSharedLayer */,
+				42EC3A3C1D71B3C4003A345E /* PhoneBookWatch */,
+				42EC3A4B1D71B3C5003A345E /* PhoneBookWatch Extension */,
+				42EC3A081D4E53E0003A345E /* Products */,
+				0B0ED55FC29DB25DCAEB2996 /* Pods */,
+				5669DD59036C71E9C751A511 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42EC3A081D4E53E0003A345E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42EC3A071D4E53E0003A345E /* PhoneBook.app */,
+				42EC3A2C1D71B36D003A345E /* PhoneBookSharedLayer.framework */,
+				42EC3A3B1D71B3C4003A345E /* PhoneBookWatch.app */,
+				42EC3A471D71B3C5003A345E /* PhoneBookWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42EC3A091D4E53E0003A345E /* PhoneBook */ = {
+			isa = PBXGroup;
+			children = (
+				42EC3A221D719D33003A345E /* RealmModel */,
+				42EC3A0A1D4E53E0003A345E /* AppDelegate.swift */,
+				42EC3A0C1D4E53E0003A345E /* ViewController.swift */,
+				42EC3A201D7185FD003A345E /* EntryViewController.swift */,
+				42EC3A0E1D4E53E0003A345E /* Main.storyboard */,
+				42EC3A111D4E53E0003A345E /* Assets.xcassets */,
+				42EC3A131D4E53E0003A345E /* LaunchScreen.storyboard */,
+				42EC3A161D4E53E0003A345E /* Info.plist */,
+			);
+			path = PhoneBook;
+			sourceTree = "<group>";
+		};
+		42EC3A221D719D33003A345E /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				42EC3A231D719D88003A345E /* ContactItem.swift */,
+				42EC3A251D71AF94003A345E /* ContactDataController.swift */,
+			);
+			name = RealmModel;
+			sourceTree = "<group>";
+		};
+		42EC3A2D1D71B36D003A345E /* PhoneBookSharedLayer */ = {
+			isa = PBXGroup;
+			children = (
+				42EC3A2E1D71B36D003A345E /* PhoneBookSharedLayer.h */,
+				42EC3A301D71B36D003A345E /* Info.plist */,
+			);
+			path = PhoneBookSharedLayer;
+			sourceTree = "<group>";
+		};
+		42EC3A3C1D71B3C4003A345E /* PhoneBookWatch */ = {
+			isa = PBXGroup;
+			children = (
+				42EC3A3D1D71B3C4003A345E /* Interface.storyboard */,
+				42EC3A401D71B3C4003A345E /* Assets.xcassets */,
+				42EC3A421D71B3C4003A345E /* Info.plist */,
+			);
+			path = PhoneBookWatch;
+			sourceTree = "<group>";
+		};
+		42EC3A4B1D71B3C5003A345E /* PhoneBookWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				42EC3A5E1D71B539003A345E /* ContactCell */,
+				42EC3A4C1D71B3C5003A345E /* InterfaceController.swift */,
+				42EC3A4E1D71B3C5003A345E /* ExtensionDelegate.swift */,
+				42EC3A501D71B3C5003A345E /* Assets.xcassets */,
+				42EC3A521D71B3C5003A345E /* Info.plist */,
+			);
+			path = "PhoneBookWatch Extension";
+			sourceTree = "<group>";
+		};
+		42EC3A5E1D71B539003A345E /* ContactCell */ = {
+			isa = PBXGroup;
+			children = (
+				42EC3A5F1D71B58D003A345E /* ContactCell.swift */,
+			);
+			name = ContactCell;
+			sourceTree = "<group>";
+		};
+		5669DD59036C71E9C751A511 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2040198624A9BE8FBC94A494 /* Pods_PhoneBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		42EC3A291D71B36D003A345E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EC3A2F1D71B36D003A345E /* PhoneBookSharedLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		42EC3A061D4E53E0003A345E /* PhoneBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EC3A191D4E53E0003A345E /* Build configuration list for PBXNativeTarget "PhoneBook" */;
+			buildPhases = (
+				299AA067C7E3288361A7A231 /* [CP] Check Pods Manifest.lock */,
+				42EC3A031D4E53E0003A345E /* Sources */,
+				42EC3A041D4E53E0003A345E /* Frameworks */,
+				42EC3A051D4E53E0003A345E /* Resources */,
+				340239724AB9BABEED8DB60C /* [CP] Embed Pods Frameworks */,
+				BFEE00477812283148868CA7 /* [CP] Copy Pods Resources */,
+				42EC3A341D71B36D003A345E /* Embed Frameworks */,
+				42EC3A5D1D71B3C5003A345E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42EC3A321D71B36D003A345E /* PBXTargetDependency */,
+				42EC3A541D71B3C5003A345E /* PBXTargetDependency */,
+			);
+			name = PhoneBook;
+			productName = PhoneBook;
+			productReference = 42EC3A071D4E53E0003A345E /* PhoneBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42EC3A2B1D71B36D003A345E /* PhoneBookSharedLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EC3A361D71B36D003A345E /* Build configuration list for PBXNativeTarget "PhoneBookSharedLayer" */;
+			buildPhases = (
+				42EC3A271D71B36D003A345E /* Sources */,
+				42EC3A281D71B36D003A345E /* Frameworks */,
+				42EC3A291D71B36D003A345E /* Headers */,
+				42EC3A2A1D71B36D003A345E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneBookSharedLayer;
+			productName = PhoneBookSharedLayer;
+			productReference = 42EC3A2C1D71B36D003A345E /* PhoneBookSharedLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		42EC3A3A1D71B3C4003A345E /* PhoneBookWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EC3A5A1D71B3C5003A345E /* Build configuration list for PBXNativeTarget "PhoneBookWatch" */;
+			buildPhases = (
+				42EC3A391D71B3C4003A345E /* Resources */,
+				42EC3A591D71B3C5003A345E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42EC3A4A1D71B3C5003A345E /* PBXTargetDependency */,
+			);
+			name = PhoneBookWatch;
+			productName = PhoneBookWatch;
+			productReference = 42EC3A3B1D71B3C4003A345E /* PhoneBookWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		42EC3A461D71B3C5003A345E /* PhoneBookWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EC3A561D71B3C5003A345E /* Build configuration list for PBXNativeTarget "PhoneBookWatch Extension" */;
+			buildPhases = (
+				42EC3A431D71B3C5003A345E /* Sources */,
+				42EC3A441D71B3C5003A345E /* Frameworks */,
+				42EC3A451D71B3C5003A345E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PhoneBookWatch Extension";
+			productName = "PhoneBookWatch Extension";
+			productReference = 42EC3A471D71B3C5003A345E /* PhoneBookWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42EC39FF1D4E53E0003A345E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = nlbtoan;
+				TargetAttributes = {
+					42EC3A061D4E53E0003A345E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					42EC3A2B1D71B36D003A345E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					42EC3A3A1D71B3C4003A345E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					42EC3A461D71B3C5003A345E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 42EC3A021D4E53E0003A345E /* Build configuration list for PBXProject "PhoneBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42EC39FE1D4E53E0003A345E;
+			productRefGroup = 42EC3A081D4E53E0003A345E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42EC3A061D4E53E0003A345E /* PhoneBook */,
+				42EC3A2B1D71B36D003A345E /* PhoneBookSharedLayer */,
+				42EC3A3A1D71B3C4003A345E /* PhoneBookWatch */,
+				42EC3A461D71B3C5003A345E /* PhoneBookWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42EC3A051D4E53E0003A345E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EC3A151D4E53E0003A345E /* LaunchScreen.storyboard in Resources */,
+				42EC3A121D4E53E0003A345E /* Assets.xcassets in Resources */,
+				42EC3A101D4E53E0003A345E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EC3A2A1D71B36D003A345E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EC3A391D71B3C4003A345E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EC3A411D71B3C4003A345E /* Assets.xcassets in Resources */,
+				42EC3A3F1D71B3C4003A345E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EC3A451D71B3C5003A345E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EC3A511D71B3C5003A345E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		299AA067C7E3288361A7A231 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		340239724AB9BABEED8DB60C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneBook/Pods-PhoneBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFEE00477812283148868CA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneBook/Pods-PhoneBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42EC3A031D4E53E0003A345E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EC3A261D71AF94003A345E /* ContactDataController.swift in Sources */,
+				42EC3A0D1D4E53E0003A345E /* ViewController.swift in Sources */,
+				42EC3A0B1D4E53E0003A345E /* AppDelegate.swift in Sources */,
+				42EC3A211D7185FD003A345E /* EntryViewController.swift in Sources */,
+				42EC3A241D719D88003A345E /* ContactItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EC3A271D71B36D003A345E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EC3A431D71B3C5003A345E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EC3A601D71B58D003A345E /* ContactCell.swift in Sources */,
+				42EC3A4F1D71B3C5003A345E /* ExtensionDelegate.swift in Sources */,
+				42EC3A4D1D71B3C5003A345E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42EC3A321D71B36D003A345E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EC3A2B1D71B36D003A345E /* PhoneBookSharedLayer */;
+			targetProxy = 42EC3A311D71B36D003A345E /* PBXContainerItemProxy */;
+		};
+		42EC3A4A1D71B3C5003A345E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EC3A461D71B3C5003A345E /* PhoneBookWatch Extension */;
+			targetProxy = 42EC3A491D71B3C5003A345E /* PBXContainerItemProxy */;
+		};
+		42EC3A541D71B3C5003A345E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42EC3A3A1D71B3C4003A345E /* PhoneBookWatch */;
+			targetProxy = 42EC3A531D71B3C5003A345E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42EC3A0E1D4E53E0003A345E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EC3A0F1D4E53E0003A345E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42EC3A131D4E53E0003A345E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EC3A141D4E53E0003A345E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		42EC3A3D1D71B3C4003A345E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EC3A3E1D71B3C4003A345E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42EC3A171D4E53E0003A345E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42EC3A181D4E53E0003A345E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42EC3A1A1D4E53E0003A345E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0DF29748F9FAE60C822483F /* Pods-PhoneBook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhoneBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "btc-uaf.PhoneBook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42EC3A1B1D4E53E0003A345E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4545883726DC19E5238EAEED /* Pods-PhoneBook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhoneBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "btc-uaf.PhoneBook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42EC3A371D71B36D003A345E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PhoneBookSharedLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "btc-uaf.PhoneBookSharedLayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42EC3A381D71B36D003A345E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PhoneBookSharedLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "btc-uaf.PhoneBookSharedLayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42EC3A571D71B3C5003A345E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PhoneBookWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "btc-uaf.PhoneBook.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		42EC3A581D71B3C5003A345E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PhoneBookWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "btc-uaf.PhoneBook.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		42EC3A5B1D71B3C5003A345E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PhoneBookWatch_Extension;
+				INFOPLIST_FILE = PhoneBookWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "btc-uaf.PhoneBook.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		42EC3A5C1D71B3C5003A345E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PhoneBookWatch_Extension;
+				INFOPLIST_FILE = PhoneBookWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "btc-uaf.PhoneBook.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42EC3A021D4E53E0003A345E /* Build configuration list for PBXProject "PhoneBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EC3A171D4E53E0003A345E /* Debug */,
+				42EC3A181D4E53E0003A345E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EC3A191D4E53E0003A345E /* Build configuration list for PBXNativeTarget "PhoneBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EC3A1A1D4E53E0003A345E /* Debug */,
+				42EC3A1B1D4E53E0003A345E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EC3A361D71B36D003A345E /* Build configuration list for PBXNativeTarget "PhoneBookSharedLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EC3A371D71B36D003A345E /* Debug */,
+				42EC3A381D71B36D003A345E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42EC3A561D71B3C5003A345E /* Build configuration list for PBXNativeTarget "PhoneBookWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EC3A571D71B3C5003A345E /* Debug */,
+				42EC3A581D71B3C5003A345E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42EC3A5A1D71B3C5003A345E /* Build configuration list for PBXNativeTarget "PhoneBookWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EC3A5B1D71B3C5003A345E /* Debug */,
+				42EC3A5C1D71B3C5003A345E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42EC39FF1D4E53E0003A345E /* Project object */;
+}

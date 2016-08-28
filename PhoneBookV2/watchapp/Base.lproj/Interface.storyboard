@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchapp" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="AkO-zd-xkX">
+                            <items>
+                                <tableRow identifier="ContactType" id="Ijg-Ws-JmY" customClass="ContactCell" customModule="watchapp_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="drN-qq-QzL">
+                                        <items>
+                                            <label width="136" height="56.5" alignment="left" text="Label" id="Tyl-RB-BRg"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblName" destination="Tyl-RB-BRg" id="aKK-1O-m8T"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tblContact" destination="AkO-zd-xkX" id="Aus-dV-cqq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="140" y="217"/>
+        </scene>
+        <!--ContactDetailsWC-->
+        <scene sceneID="GuU-KW-uXv">
+            <objects>
+                <controller identifier="ContactDetailsWC" id="0ij-7z-rHM" customClass="ContactDetailsInterfaceController" customModule="watchapp_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Label" id="jfV-qX-VeQ"/>
+                        <label width="1" alignment="left" text="Label" id="Imk-YN-Q9F"/>
+                        <label width="1" alignment="left" text="Label" id="K2w-lJ-rPk"/>
+                    </items>
+                    <connections>
+                        <outlet property="lblEmail" destination="Imk-YN-Q9F" id="vdA-ZN-A60"/>
+                        <outlet property="lblFullName" destination="jfV-qX-VeQ" id="hmm-g6-KsE"/>
+                        <outlet property="lblMobileNo" destination="K2w-lJ-rPk" id="nOD-6l-HXf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="378" y="220"/>
+        </scene>
+    </scenes>
+</document>
