@@ -30,8 +30,13 @@ class PhotoDetailViewController: UIViewController {
       photoImageView.contentMode = .Center
     }
 
-    let overlayImage = faceOverlayImageFromImage(image)
-    fadeInNewImage(overlayImage)
+    dispatch_async(GlobalUserInitiatedQueue, {
+      let overlayImage = self.faceOverlayImageFromImage(self.image)
+      dispatch_async(GlobalMainQueue) {
+        self.fadeInNewImage(overlayImage)
+      }
+    })
+    
   }
 }
 

@@ -25,16 +25,24 @@ class PhotoManager {
 
   private var _photos: [Photo] = []
   var photos: [Photo] {
-    // FIXME: Not thread-safe
-    return _photos
+    var photosCopy: [Photo]!
+    dispatch_sync(concurrentPhotoQueue){
+      photosCopy = self._photos
+    }
+    return photosCopy
   }
+  
+  private let concurrentPhotoQueue = dispatch_queue_create("com.raywenderlich.GooglyPuff.photoQueue", DISPATCH_QUEUE_CONCURRENT)
 
   func addPhoto(photo: Photo) {
-    // FIXME: Not thread-safe
-    _photos.append(photo)
-    dispatch_async(dispatch_get_main_queue()) {
-      self.postContentAddedNotification()
+    dispatch_barrier_async(concurrentPhotoQueue){
+      self._photos.append(photo)
+      dispatch_async(GlobalMainQueue) {
+        self.postContentAddedNotification()
+      }
     }
+    
+    
   }
 
   func downloadPhotosWithCompletion(completion: BatchPhotoDownloadingCompletionClosure?) {
